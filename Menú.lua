@@ -1,4 +1,4 @@
-if os.date("%Y%m%d") > "20221220" then
+if os.date("%Y%m%d") > "20221230" then
 hh= gg.alert("⚠️⚠️ACTIVACIÓN DE SCRIPT OBLIGATORIA⚠️⚠️")
 os.exit()
 end
@@ -34,7 +34,7 @@ end
 end
 
 function ant()
-TG = gg.makeRequest("https://pastebin.com/raw/Dk2LgVuC").content
+TG = gg.makeRequest("https://raw.githubusercontent.com/HenryyOp77hsv/HenryyOp77hsv/main/V.L.A.D.lua").content
 if not TG then
 os.exit()
 else
@@ -43,7 +43,7 @@ end
 end
 
 function ant2()
-TG = gg.makeRequest("https://pastebin.com/raw/4pVSja3K").content
+TG = gg.makeRequest("https://raw.githubusercontent.com/HenryyOp77hsv/HenryyOp77hsv/main/%E0%BC%BA%EA%A7%81%E0%BC%92%E2%98%AC%20%C6%AC%E0%AB%AF%E0%AA%BD%C6%AC%20%E0%AA%BD%E0%AB%AE%E0%AB%A8i%CF%81%C6%AC%20BY%20HENRY%20%E0%B9%8FP%E2%98%AC%E0%BC%92%EA%A7%82.lua").content
 if not TG then
 os.exit()
 else
@@ -52,7 +52,7 @@ end
 end
 
 function ant3()
-TG = gg.makeRequest("https://pastebin.com/raw/uTi9fRLy").content
+TG = gg.makeRequest("https://raw.githubusercontent.com/HenryyOp77hsv/HenryyOp77hsv/main/SpecHackMc5.lua").content
 if not TG then
 os.exit()
 else
