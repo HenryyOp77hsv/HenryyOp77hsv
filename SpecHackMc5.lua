@@ -45,22 +45,6 @@ end
 end
 
 function ant()
-gg.searchNumber('"59.0F;2114.0F;0.0F:159"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber('"59"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-
-revert = gg.getListItems()
-local t = gg.getListItems()
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_FLOAT then
-		v.value = '"-159"'
-		v.freeze = false
-		v.freezeType = gg.FREEZE_NORMAL
-	end
-end
-gg.addListItems(t)
-t = nil
-
-
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber('"51.0F;233377.0F;233568.0F:41"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber('"51"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -78,6 +62,24 @@ end
 gg.addListItems(t)
 t = nil
 gg.clearResults()
+
+
+
+gg.searchNumber('"59.0F;2114.0F;0.0F:159"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber('"59"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+
+revert = gg.getListItems()
+local t = gg.getListItems()
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = '"-159"'
+		v.freeze = false
+		v.freezeType = gg.FREEZE_NORMAL
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults() 
 
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber('121.0F;34.79999923706F;64.0F', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -122,21 +124,21 @@ end
 
 function ant2()
 gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("0.005;0.180", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-revert = gg.getResults(1000, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("9999.8", gg.TYPE_FLOAT)
-if revert ~= nil then gg.setValues(revert) end
-revert = gg.getResults(1000, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("9999.8", gg.TYPE_FLOAT)
+gg.searchNumber("0.00499999989F;0.18000000715F;0.03999999911F", gg.TYPE_FLOAT) 
+gg.getResults(99999)
+gg.searchNumber("0.005F", gg.TYPE_FLOAT) 
+gg.getResults(99999)
+gg.editAll("9999.7", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("🅰🅸🅼🅱🅾🆃")
 
 gg.setRanges(gg.REGION_CODE_APP)
 gg.searchNumber("-0.0001", gg.TYPE_FLOAT)
 gg.getResults(10)
-gg.editAll("9999.8", gg.TYPE_FLOAT)
+gg.editAll("999999999999999", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("🅰🅸🅼🅱🅾🆃")
+gg.clearResults()
+gg.toast("👀🅰🅸🅼🅱🅾🆃👀")
 end
 
 
