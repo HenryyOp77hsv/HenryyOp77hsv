@@ -89,14 +89,6 @@ end
 gg.addListItems(t)
 t = nil
 gg.clearResults()
-
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("-0.0001", gg.TYPE_FLOAT)
-gg.getResults(10)
-gg.editAll("999999999999999", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.clearResults()
-
 gg.toast('ʍα૯ℓઽƬ૨ѳʍ-ઽρ૯૮ 38 ઽષρ૯૨ ѳρ+ઽρ૯૯đ+đαʍαG૯+αIʍвѳƬ+ทѳ ૨૯૮ѳIℓ')
 end
 
