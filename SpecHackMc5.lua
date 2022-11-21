@@ -45,26 +45,6 @@ end
 end
 
 function ant()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber('"51.0F;233377.0F;233568.0F:41"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber('"51"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll('"1.0e10"', gg.TYPE_FLOAT)
-
-revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_FLOAT then
-		v.value = '"1.0e10"'
-		v.freeze = true
-	end
-end
-gg.addListItems(t)
-t = nil
-gg.clearResults()
-
-
-
 gg.searchNumber('"59.0F;2114.0F;0.0F:159"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber('"59"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 
@@ -158,6 +138,7 @@ end
 gg.addListItems(t)
 t = nil
 gg.clearResults()
+
 gg.toast("🥶SPEC38A ICED🥶 CODE FREEZE 🥶")
 end
 
@@ -192,6 +173,24 @@ if v.flags == gg.TYPE_FLOAT then
 v.value = "-177"
 v.freeze = true
 end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults()
+
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber('"51.0F;233377.0F;233568.0F:41"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber('"51"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll('"1.0e10"', gg.TYPE_FLOAT)
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = '"1.0e10"'
+		v.freeze = true
+	end
 end
 gg.addListItems(t)
 t = nil
