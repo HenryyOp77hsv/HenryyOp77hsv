@@ -106,6 +106,36 @@ end
 
 
 function a1()
+gg.setRanges(gg.REGION_C_ALLOC) 
+gg.searchNumber("49.0F;382535.0F;382517.0F:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("49", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "999999"
+	end
+end
+gg.addListItems(t)
+t = nil
+
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "999999"
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults() 
+
+
+
+
 --MORT-X HACK ALL FUNCTIONS 
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber('79.0;382,530.0;382,515.0:37', gg.TYPE_FLOAT)
@@ -174,6 +204,36 @@ end
 
 
 function a2()
+gg.setRanges(gg.REGION_C_ALLOC) 
+gg.searchNumber("49.0F;382535.0F;382517.0F:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("49", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "999999"
+	end
+end
+gg.addListItems(t)
+t = nil
+
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "999999"
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults() 
+
+
+
+
 
 gg.searchNumber("40.0F;375668.0F;375669.0F:45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("40", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
@@ -261,6 +321,36 @@ end
 
 
 function a3()
+gg.setRanges(gg.REGION_C_ALLOC) 
+gg.searchNumber("49.0F;382535.0F;382517.0F:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("49", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "999999"
+	end
+end
+gg.addListItems(t)
+t = nil
+
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "999999"
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults() 
+
+
+
+
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("36.0F;375670.0F;375671.0F:57", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("36", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
@@ -357,6 +447,35 @@ end
 --🅵🅻🅰🅼🅸🅽🅶 = 🅷🅰🅲🅺 🅾🅽
 
 function a4()
+gg.setRanges(gg.REGION_C_ALLOC) 
+gg.searchNumber("49.0F;382535.0F;382517.0F:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("49", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "999999"
+	end
+end
+gg.addListItems(t)
+t = nil
+
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "999999"
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults() 
+
+
+
 gg.setRanges(gg.REGION_C_ALLOC) 
 gg.searchNumber("35.0F;382551.0F;375673.0F:65", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("35", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
@@ -480,12 +599,12 @@ gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("10034.0;130.0;34.34999847412:9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("34.34999847412", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(1000, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("35.7", gg.TYPE_FLOAT)
+gg.editAll("35.4", gg.TYPE_FLOAT)
 revert = gg.getResults(1000, nil, nil, nil, nil, nil, nil, nil, nil)
 local t = gg.getResults(1000, nil, nil, nil, nil, nil, nil, nil, nil)
 for i, v in ipairs(t) do
 if v.flags == gg.TYPE_FLOAT then
-v.value = "35.7"
+v.value = "35.4"
 v.freeze = true
 end
 end
@@ -499,6 +618,36 @@ end
 --ᵥₑₑᵣ ₚₒWₑᵣ
 
 function a6() 
+gg.setRanges(gg.REGION_C_ALLOC) 
+gg.searchNumber("49.0F;382535.0F;382517.0F:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("49", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "999999"
+	end
+end
+gg.addListItems(t)
+t = nil
+
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "999999"
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults() 
+
+
+
+
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber('42.0;5 034.0;35.0;74.0;309.0;134.0;69.0;59.0;36.0;37.5;66.0:241', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber('35', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -591,6 +740,36 @@ end
 --ᴷⱽ⁴ᴸ⁻ᶻ ᴴᴬᶜᴷ
 
 function a7() 
+gg.setRanges(gg.REGION_C_ALLOC) 
+gg.searchNumber("49.0F;382535.0F;382517.0F:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("49", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "999999"
+	end
+end
+gg.addListItems(t)
+t = nil
+
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "999999"
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults() 
+
+
+
+
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("34.90000152588F;382518.0F;382519.0F:177", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("34.90000152588", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
@@ -704,12 +883,38 @@ end
 
 --FREEZE ZOMBIES FUSION 
 function b2() 
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("-1312812784", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("-1312812784", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-revert = gg.getResults(5000, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("-1981808624", gg.TYPE_DWORD)
 gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg. searchNumber("1,260,238;-1,312,812,784", gg.TYPE_DWORD)
+gg.refineNumber("-1,312,812,784", gg.TYPE_DWORD)
+revert = gg.getResults(1)
+local t = gg.getResults(1)
+for i, v in ipairs(t) do
+if v.flags == gg.TYPE_DWORD then
+v.value = "-1,981,808,624"
+v.freeze = true
+end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults()
+
+
+gg.setRanges(gg.REGION_C_ALLOC) 
+gg.searchNumber("35.0F;1220253632A;384191.0F:45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("35", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "99999"
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults() 
 gg.toast("FREEZE ZOMBIES IN HAW PISTOL") 
 end
 
