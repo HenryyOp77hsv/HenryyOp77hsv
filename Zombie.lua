@@ -143,7 +143,7 @@ gg.refineNumber('79', gg.TYPE_FLOAT)
 local freeze=gg.getResults(1)
 for i, v in ipairs(freeze) do
 if v.flags==gg.TYPE_FLOAT then
-v.value='9999999999999'
+v.value='99999'
 v.freeze=true
 end
 end
