@@ -767,7 +767,23 @@ gg.addListItems(t)
 t = nil
 gg.clearResults() 
 
+gg.setRanges(gg.REGION_C_ALLOC) 
+gg.searchNumber('"35.0F;1220201376A;382519.0F:49"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber('"35"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+revert = gg.getResults(7, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll('"99999"', gg.TYPE_FLOAT)
 
+revert = gg.getResults(7, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(7, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = '"99999.0"'
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults()) 
 
 
 gg.setRanges(gg.REGION_C_ALLOC)
