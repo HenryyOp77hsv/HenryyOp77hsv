@@ -134,8 +134,6 @@ t = nil
 gg.clearResults() 
 
 
-
-
 --MORT-X HACK ALL FUNCTIONS 
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber('79.0;382,530.0;382,515.0:37', gg.TYPE_FLOAT)
@@ -167,7 +165,6 @@ gg.clearResults()
 gg.toast("[Rapid Reload On]")
 
 
-
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber('34.0;382,530.0;382,515.0:185', gg.TYPE_FLOAT)
 gg.refineNumber('34', gg.TYPE_FLOAT)
@@ -181,7 +178,6 @@ end
 gg.addListItems(freeze)
 gg.clearResults()
 gg.toast("[Max Penetration On]")
-
 
 
 gg.setRanges(gg.REGION_C_ALLOC)
@@ -201,8 +197,6 @@ end
 
 
 --L1N4 HACK MENU
-
-
 function a2()
 gg.setRanges(gg.REGION_C_ALLOC) 
 gg.searchNumber("49.0F;382535.0F;382517.0F:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
@@ -232,9 +226,6 @@ t = nil
 gg.clearResults() 
 
 
-
-
-
 gg.searchNumber("40.0F;375668.0F;375669.0F:45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("40", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
@@ -252,8 +243,6 @@ gg.addListItems(t)
 t = nil
 gg.clearResults()
 gg.toast("ʟ1ɴᴀ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴍᴍᴏ" )
-
-
 
 
 gg.clearResults()
@@ -283,8 +272,6 @@ gg.addListItems(t)
 t = nil
 gg.clearResults() 
 gg.toast("RATE OF FIRE IN LINA")
-
-
 
 
 gg.searchNumber("70.0F;375668.0F;375669.0F:17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
@@ -318,8 +305,6 @@ end
 
 --EXTERMINATOR HACK MENU
 
-
-
 function a3()
 gg.setRanges(gg.REGION_C_ALLOC) 
 gg.searchNumber("49.0F;382535.0F;382517.0F:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
@@ -349,8 +334,6 @@ t = nil
 gg.clearResults() 
 
 
-
-
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("36.0F;375670.0F;375671.0F:57", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("36", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
@@ -371,8 +354,6 @@ gg.clearResults()
 gg.toast("ᴱˣᵀᴱᴿᴹᴵᴺᴬᵀᴼᴿ ᵁᴺᴸᴵᴹᴵᵀᴱᴰ ᴬᴹᴹᴼ") 
 
 
-
-
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("65034.0F;35.0F;1033.0F:217", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("35", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
@@ -390,8 +371,6 @@ end
 gg.addListItems(t)
 t = nil
 gg.clearResults()
-
-
 
 
 gg.setRanges(gg.REGION_C_ALLOC)
@@ -442,8 +421,6 @@ gg.clearResults()
 gg.toast('Hack 🆃🅴🆁🅼🅸🅽🅰🆃🅾🆁=ON')
 end
 
-
-
 --🅵🅻🅰🅼🅸🅽🅶 = 🅷🅰🅲🅺 🅾🅽
 
 function a4()
@@ -473,7 +450,6 @@ end
 gg.addListItems(t)
 t = nil
 gg.clearResults() 
-
 
 
 gg.setRanges(gg.REGION_C_ALLOC) 
@@ -562,7 +538,6 @@ gg.toast('🅵🅻🅰🅼🅸🅽🅶 = 🅷🅰🅲🅺 🅾🅽')
 end
 
 
-
 function a5() 
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("59", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
@@ -614,7 +589,6 @@ gg.clearResults()
 gg.toast('🥶FREEZER = ON🥶')
 end
 
-
 --ᵥₑₑᵣ ₚₒWₑᵣ
 
 function a6() 
@@ -644,8 +618,6 @@ end
 gg.addListItems(t)
 t = nil
 gg.clearResults() 
-
-
 
 
 gg.setRanges(gg.REGION_C_ALLOC)
@@ -767,24 +739,6 @@ gg.addListItems(t)
 t = nil
 gg.clearResults() 
 
-gg.setRanges(gg.REGION_C_ALLOC) 
-gg.searchNumber('"35.0F;1220201376A;382519.0F:49"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber('"35"', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-revert = gg.getResults(7, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll('"99999"', gg.TYPE_FLOAT)
-
-revert = gg.getResults(7, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = gg.getResults(7, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_FLOAT then
-		v.value = '"99999.0"'
-		v.freeze = true
-	end
-end
-gg.addListItems(t)
-t = nil
-gg.clearResults()) 
-
 
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("34.90000152588F;382518.0F;382519.0F:177", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
@@ -869,11 +823,8 @@ gg.clearResults()
 gg.toast('ᴷⱽ⁴ᴸ⁻ᶻ ᴴᴬᶜᴷ') 
 end
 
-
-
 function HOME() 
 end
-
 
 --VEER POWER FUSION
 function b1()
@@ -935,8 +886,6 @@ gg.toast("FREEZE ZOMBIES IN HAW PISTOL")
 end
 
 
-
-
 --THE ZAPPER FUSION
 function b3() 
 gg.setRanges(gg.REGION_C_ALLOC) 
@@ -978,8 +927,6 @@ t = nil
 gg.clearResults()
 gg.toast('🅵🅻🅰🅼🅸🅽🅶 IN MORT X')
 end
-
-
 
 --KV4L-Z FUSION
 function b5()
@@ -1137,25 +1084,14 @@ gg.clearResults()
 gg.toast('K-V4L IN MORT X')
 end
 
-
-
 function  G()
-
-
 gg.toast('𝐀𝐁𝐎𝐔𝐓 𝐓𝐇𝐄 𝐒𝐂𝐑𝐈𝐏𝐓 LEER PARA CONTACTAR AL CREADOR Y(O) EDITOR')
 
 gg.alert([[  \n══┈┈┈┄┄╌╌╌╌┄┄┈╌╌╌╌╌╌╌╌╌╌╌╌╌╌┈┈┈┄┈┈┈┈┈┄┄╌╌╌╌══ㅤㅤCREATOR INFORMATION (READ TO CONTACT THE CREATOR) THIS SCRIPT HAS BEEN MADE FOR MC5 IF YOU WANT TO CONTACT THE CREATOR OF THE SCRIPT YOU CAN WRITE ME AT TELEGRAM https://t.me/HenrySOpaaiLover THE SCRIPTS HAVE DEVICE DETECTION YOU CAN ONLY USE THE SCRIPT INUN DEVICE ONLY IF A FOREIGN CONNECTION TO YOUR DEVICE IS DETECTED OR YOU TRY TO DESCRIPT THE SCRIPT YOUR MEMBERSHIP WILL BE COMPLETELY CANCELED AND YOU MUST CONTACT ME TO REACTIVATE THE SCRIPT TO WHICH MAY INCLUDE ADDITIONAL EXPENSES
 ══┈┈┈┄┄╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┄┄┈┈┈┈┄┈┈┈┈┈┄┄╌╌╌╌══\n
 
-                                                       ©2022 Henry S OP NO RIGHTS ʀᴇsᴇʀᴠᴇᴅ]])
+                                                      ©2022 Henry S OP NO RIGHTS ʀᴇsᴇʀᴠᴇᴅ]])
 end
-
-
-
-
-
-
-
 
 function Exit()
 gg.toast('MENU HACK MODERN COMBAT 5 by ђєภภy ร ๏P ђคcк')
