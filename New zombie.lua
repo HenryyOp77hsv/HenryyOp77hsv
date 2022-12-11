@@ -713,23 +713,6 @@ end
 
 function a7() 
 gg.setRanges(gg.REGION_C_ALLOC) 
-gg.searchNumber("35.0F;1220253632A;384191.0F:45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("35", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-
-revert = gg.getResults(6, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = gg.getResults(6, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_FLOAT then
-		v.value = "99999"
-		v.freeze = true
-	end
-end
-gg.addListItems(t)
-t = nil
-gg.clearResults() 
-
-
-gg.setRanges(gg.REGION_C_ALLOC) 
 gg.searchNumber("49.0F;382535.0F;382517.0F:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("49", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 
