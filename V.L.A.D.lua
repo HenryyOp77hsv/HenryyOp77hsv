@@ -1,4 +1,4 @@
-if os.date("%Y%m%d") > "20221220" then
+if os.date("%Y%m%d") > "20231220" then
 hh= gg.alert("⚠️⚠️ACTIVACIÓN DE SCRIPT OBLIGATORIA⚠️⚠️")
 os.exit()
 end
