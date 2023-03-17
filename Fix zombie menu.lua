@@ -55,8 +55,9 @@ menu1 = gg.choice({
 '╔क══════════════════क≛★≛क══════════════════क╗\n⊚ᵥₑₑᵣ ₚₒWₑᵣ⁻ᴹᴼᴿᵀ⁻ˣ︻デ═一ㅤㅤㅤㅤㅤ★ʜᴇɴʀʏ ꜱ ꜱᴄʀɪᴘᴛ★ㅤㅤㅤㅤㅤㅤ🧟',
 	'⊚ᶠᴿᴱᴱᶻᴱ ᶻᴼᴹᴮᴵᴱˢ    ︻デ═一ㅤㅤㅤㅤㅤㅤ ★ʜᴇɴʀʏ ꜱ ꜱᴄʀɪᴘᴛ★ㅤㅤㅤㅤㅤㅤ🧟',
 	'⊚ᵀʰᵉ ᶻᴬᴾᴾᴱᴿ ᶠᵁˢᴵᴼᴺ︻デ═一ㅤㅤㅤㅤㅤㅤ★ʜᴇɴʀʏ ꜱ ꜱᴄʀɪᴘᴛ★ㅤㅤㅤㅤㅤㅤ🧟',
-	'⊚ʀᴏᴀꜱᴛᴇʀ ᶠᵁˢᴵᴼᴺ︻デ═一ㅤㅤㅤㅤㅤㅤㅤ★ʜᴇɴʀʏ ꜱ ꜱᴄʀɪᴘᴛ★ㅤㅤㅤㅤㅤ🧟',
-	'⊚ᴷⱽ⁴ᴸ ᶻ ᶠᵁˢᴵᴼᴺㅤㅤㅤ︻デ═一ㅤㅤㅤㅤㅤ★ʜᴇɴʀʏ ꜱ ꜱᴄʀɪᴘᴛ★ㅤㅤㅤㅤㅤㅤ 🧟\n╚क══════════════════क≛★≛क══════════════════क╝',
+	'⊚ʀᴏᴀꜱᴛᴇʀ ᶠᵁˢᴵᴼᴺ︻デ═一ㅤㅤㅤㅤㅤ  ★ʜᴇɴʀʏ ꜱ ꜱᴄʀɪᴘᴛ★ㅤㅤㅤㅤㅤ    🧟',
+	'⊚ᴷⱽ⁴ᴸ ᶻ ᶠᵁˢᴵᴼᴺㅤㅤㅤ︻デ═一ㅤㅤㅤㅤㅤ★ʜᴇɴʀʏ ꜱ ꜱᴄʀɪᴘᴛ★ㅤㅤㅤㅤㅤㅤ 🧟',
+    ' ⊚ᴸ¹ᴺᴬ ᶠᵁˢᴵᴼᴺㅤㅤㅤ︻デ═一ㅤㅤㅤㅤㅤ★ʜᴇɴʀʏ ꜱ ꜱᴄʀɪᴘᴛ★ㅤㅤㅤㅤㅤㅤ 🧟\n╚क══════════════════क≛★≛क══════════════════क╝',
 	'ㅤㅤㅤㅤㅤㅤ╭───────────────────────────╮\n ㅤㅤㅤㅤㅤㅤㅤ☠️━─━──── E⃢​    X⃢​    I⃢​    T⃢─────━─━☠️\nㅤㅤㅤㅤㅤㅤ╰───────────────────────────╯'
 	}, nil,'ㅤㅤㅤㅤㅤㅤㅤㅤㅤ︻デ═一🄴🅂🄿🄴🄲🄸🄰🄻 🅉🄾🄼🄱🄸🄴 🄼🄴🄽🅄︻デ═一')
 
@@ -65,7 +66,8 @@ if menu1 == 2 then b2() end
 if menu1 == 3 then b3() end
 if menu1 == 4 then b4() end
 if menu1 == 5 then b5() end
-if menu1 == 6 then HOME() end
+if menu1 == 6 then b6() end
+if menu1 == 7 then HOME() end
 GLWW=-1
 end
 
@@ -199,6 +201,44 @@ end
 --L1N4 HACK MENU
 function a2()
 gg.setRanges(gg.REGION_C_ALLOC) 
+gg.searchNumber("40.0F;382,542.0F;375,669.0F:41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("40", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("9999999999", gg.TYPE_FLOAT)
+
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "9999999999"
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults()
+
+
+gg.setRanges(gg.REGION_C_ALLOC) 
+gg.searchNumber("35.0F;382542.0F;375669.0F:49", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("35", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("9999999999", gg.TYPE_FLOAT)
+
+revert = gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "1.0e10"
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults() 
+gg.toast("ʟ1ɴᴀ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴍᴍᴏ" )
+
+gg.setRanges(gg.REGION_C_ALLOC) 
 gg.searchNumber("49.0F;382535.0F;382517.0F:37", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("49", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 
@@ -206,7 +246,7 @@ revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
 local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
 for i, v in ipairs(t) do
 	if v.flags == gg.TYPE_FLOAT then
-		v.value = "999999"
+		v.value = "99999999999"
 	end
 end
 gg.addListItems(t)
@@ -217,7 +257,7 @@ revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
 local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
 for i, v in ipairs(t) do
 	if v.flags == gg.TYPE_FLOAT then
-		v.value = "999999"
+		v.value = "99999999999"
 		v.freeze = true
 	end
 end
@@ -226,34 +266,15 @@ t = nil
 gg.clearResults() 
 
 
-gg.searchNumber("40.0F;375668.0F;375669.0F:45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("40", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("599", gg.TYPE_FLOAT)
-
-revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_FLOAT then
-		v.value = "599.0"
-		v.freeze = true
-	end
-end
-gg.addListItems(t)
-t = nil
 gg.clearResults()
-gg.toast("ʟ1ɴᴀ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴍᴍᴏ" )
-
-
-gg.clearResults()
-gg.searchNumber("34.34999847412F;375668.0F;375669.0F:245", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("34.34999847412F;382,542.0F;375,669.0F:245", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("34.34999847412", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 
 revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
 local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
 for i, v in ipairs(t) do
 	if v.flags == gg.TYPE_FLOAT then
-		v.value = "34.7"
+		v.value = "34.5"
 	end
 end
 gg.addListItems(t)
@@ -264,7 +285,7 @@ revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
 local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
 for i, v in ipairs(t) do
 	if v.flags == gg.TYPE_FLOAT then
-		v.value = "34.7"
+		v.value = "34.5"
 		v.freeze = true
 	end
 end
@@ -272,34 +293,6 @@ gg.addListItems(t)
 t = nil
 gg.clearResults() 
 gg.toast("RATE OF FIRE IN LINA")
-
-
-gg.searchNumber("70.0F;375668.0F;375669.0F:17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("70", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-
-revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_FLOAT then
-		v.value = "9999999999999999999999"
-	end
-end
-gg.addListItems(t)
-t = nil
-
-
-revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
-local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_FLOAT then
-		v.value = "9.99999978e21"
-		v.freeze = true
-	end
-end
-gg.addListItems(t)
-t = nil
-gg.clearResults() 
-gg.toast("L1N4 HACK ON") 
 end
 
 
@@ -915,7 +908,50 @@ t = nil
 gg.clearResults()
 gg.toast('K-V4L IN MORT X')
 end
+ 
+ 
 
+
+--KV4L-Z FUSION
+function b6()
+gg.setRanges(gg.REGION_C_ALLOC) 
+gg.searchNumber("-1,324,347,119", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("-1,309,667,312", gg.TYPE_DWORD)
+
+revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_DWORD then
+		v.value = "-1,309,667,312"
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults()
+
+gg.setRanges(gg.REGION_C_ALLOC) 
+gg.searchNumber("70", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(1000, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("999999999999", gg.TYPE_FLOAT)
+
+revert = gg.getResults(1000, nil, nil, nil, nil, nil, nil, nil, nil)
+local t = gg.getResults(1000, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_FLOAT then
+		v.value = "9.99999996e11"
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults() 
+gg.toast('L1N4 IN MORT X')
+end
+ 
+ 
+ ---1,309,667,312
 --🆄🅽🅻🅾🅲🅺 🆅🅸🅿 🆉🅾🅼🅱🅸🅴 🅲🅻🅰🆂🆂
 
 function c1()
